@@ -31,6 +31,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="140dp"
         android:src="@drawable/untitled_design__8_" />
+
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="306dp"
@@ -54,5 +55,40 @@
         android:layout_marginTop="280dp"
         android:src="@drawable/untitled_design__11_" />
 
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="65dp"
+        android:clickable="true"
+        android:src="@drawable/untitled_design" />
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="65dp"
+        android:clickable="true"
+        android:src="@drawable/dd" />
+
+    <ImageView
+        android:id="@+id/arrow3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="65dp"
+        android:clickable="true"
+        android:src="@drawable/untitled_designq" />
+
+    <ImageView
+        android:id="@+id/arrow4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="65dp"
+        android:clickable="true"
+        android:src="@drawable/ww" />
 
 </FrameLayout>

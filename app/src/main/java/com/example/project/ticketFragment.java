@@ -1,25 +1,19 @@
 package com.example.project;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link homeFragment#newInstance} factory method to
+ * Use the {@link ticketFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class homeFragment extends Fragment {
+public class ticketFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,7 +24,7 @@ public class homeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public homeFragment() {
+    public ticketFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +34,11 @@ public class homeFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment homeFragment.
+     * @return A new instance of fragment ticketFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static homeFragment newInstance(String param1, String param2) {
-        homeFragment fragment = new homeFragment();
+    public static ticketFragment newInstance(String param1, String param2) {
+        ticketFragment fragment = new ticketFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,26 +58,7 @@ public class homeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-
-        setNavigationClick(view, R.id.arrow1, new babyFragment());
-        setNavigationClick(view, R.id.arrow2, new ticketFragment());
-        setNavigationClick(view, R.id.arrow3, new imageFragment());
-        setNavigationClick(view, R.id.arrow4, new reportFragment());
-
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_ticket, container, false);
     }
-    private void setNavigationClick(View parentView, int buttonId, Fragment destination) {
-        parentView.findViewById(buttonId).setOnClickListener(v ->
-                getParentFragmentManager().beginTransaction()
-                        .replace(R.id.frame_layout, destination)
-                        .addToBackStack(null)
-                        .commit()
-        );
-    }
-
-
-
-
-
 }
