@@ -6,12 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainPage"
-    android:background="@drawable/regBackground">
+    android:background="@drawable/reg_background">
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardBackgroundColor="@color/white"
         android:layout_gravity="center_vertical"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"

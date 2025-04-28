@@ -6,12 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/regBackground"
+    android:background="@drawable/reg_background"
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardBackgroundColor="@color/white"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
@@ -37,12 +39,12 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/login_username"
+                android:id="@+id/login_email"
                 android:background="@drawable/baby_blue_boarder"
                 android:layout_marginTop="40dp"
                 android:padding="8dp"
-                android:hint="Username"
-                android:drawableLeft="@drawable/baseline_person_pin_24"
+                android:hint="Email"
+                android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
 
@@ -65,17 +67,21 @@
                 android:textSize="22dp"
                 android:layout_marginTop="30dp"
                 app:cornerRadius="20dp"/>
+
             <TextView
+                android:id="@+id/signupRedirect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/signupRedirect"
-                android:padding="8dp"
-                android:layout_marginTop="10dp"
-                android:text="Not Yet Registered? Sign Up"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
                 android:layout_gravity="center"
-                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:onClick="setSignupRedirect"
+                android:padding="8dp"
+                android:text="Not Yet Registered? Sign Up"
                 android:textColor="@color/yellow"
-                android:textStyle="bold"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>

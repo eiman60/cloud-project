@@ -6,12 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/regBackground"
+    android:background="@drawable/reg_background"
     tools:context=".SignupActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardBackgroundColor="@color/white"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
@@ -48,12 +50,12 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/signup_username"
+                android:id="@+id/signup_phone"
                 android:background="@drawable/baby_blue_boarder"
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
-                android:hint="Username"
-                android:drawableLeft="@drawable/baseline_person_pin_24"
+                android:hint="Phone"
+                android:drawableLeft="@drawable/baseline_local_phone_24"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
             <EditText
@@ -96,18 +98,22 @@
                 android:id="@+id/signup_btn"
                 android:textSize="22dp"
                 android:layout_marginTop="30dp"
-                app:cornerRadius="20dp"
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/logingRedirect"
-                    android:padding="8dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Already an user? Login"
-                    android:layout_gravity="center"
-                    android:textSize="18sp"
-                    android:textColor="@color/yellow"
-                    android:textStyle="bold"
+                app:cornerRadius="20dp"/>
+
+            <TextView
+                android:id="@+id/logingRedirect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:onClick="setLoginRedirect"
+                android:padding="8dp"
+                android:text="Already an user? Login"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>

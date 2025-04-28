@@ -5,6 +5,5 @@
         <item name="colorPrimary">@color/baby_blue</item>
         <item name="colorPrimaryVariant" tools:ignore="DuplicateDefinition">@color/baby_blue</item>
     </style>
-
     <style name="Theme.Project" parent="Base.Theme.Project" />
 </resources>

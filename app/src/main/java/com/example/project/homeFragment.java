@@ -66,7 +66,7 @@ public class homeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        setNavigationClick(view, R.id.arrow1, new babyFragment());
+        setNavigationClick(view, R.id.arrow1, new ShowBabyFragment());
         setNavigationClick(view, R.id.arrow2, new ticketFragment());
         setNavigationClick(view, R.id.arrow3, new imageFragment());
         setNavigationClick(view, R.id.arrow4, new reportFragment());
