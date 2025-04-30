@@ -98,7 +98,9 @@ public class SignupActivity extends AppCompatActivity {
                             String userId = fAuth.getCurrentUser().getUid();
                             Map<String,Object> user = new HashMap<>();
                             user.put("name", name);
+                            user.put("fname", ""); // Empty initially
                             user.put("phone", phone);
+                            user.put("phone2", ""); // Empty initially
                             user.put("email", email);
                             db.collection("users").document(userId).set(user).addOnSuccessListener(aVoid -> {
                                 startActivity(new Intent(SignupActivity.this,MainActivity.class));

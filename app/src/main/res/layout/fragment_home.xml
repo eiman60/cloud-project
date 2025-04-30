@@ -20,9 +20,9 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:srcCompat="@drawable/untitled_design__7_" />
+        android:layout_height="838dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/userimage" />
 
     <ImageView
         android:id="@+id/imageView"

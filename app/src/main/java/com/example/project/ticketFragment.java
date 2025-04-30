@@ -59,6 +59,18 @@ public class ticketFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ticket, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_ticket, container, false);
+        setNavigationClick(view, R.id.left1, new homeFragment());
+        return view;
+    }
+
+    private void setNavigationClick(View parentView, int buttonId, Fragment destination) {
+        parentView.findViewById(buttonId).setOnClickListener(v ->
+                getParentFragmentManager().beginTransaction()
+                        .replace(R.id.frame_layout, destination)
+                        .addToBackStack(null)
+                        .commit()
+        );
     }
 }

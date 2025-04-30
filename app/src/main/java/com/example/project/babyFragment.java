@@ -39,11 +39,15 @@ public class babyFragment extends Fragment {
         nationalIdEditText = view.findViewById(R.id.nationalIdEditText);
         genderRadioGroup = view.findViewById(R.id.genderRadioGroup);
         Button saveButton = view.findViewById(R.id.saveButton);
+        Button cancelButton = view.findViewById(R.id.cancel);
+
+
 
         // Initialize Firestore and Authentication
         db = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
         saveButton.setOnClickListener(v -> saveBabyData());
+        cancelButton.setOnClickListener(v -> navigateToShowBaby());
 
         return view;
     }
@@ -79,6 +83,14 @@ public class babyFragment extends Fragment {
                 .addOnFailureListener(e -> {
                     Toast.makeText(requireContext(), "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
+    }
+
+    private void navigateToShowBaby() {
+        // Use FragmentManager to replace current fragment
+        requireActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frame_layout, new ShowBabyFragment()) // Replace with your container ID
+                .commit();
     }
 
     private String getSelectedGender() {

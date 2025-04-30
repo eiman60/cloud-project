@@ -3,14 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F4FA"
     tools:context=".ticketFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:text="tickets" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/activie" />
+
+    <ImageView
+        android:id="@+id/left1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/left" />
 
 </FrameLayout>
