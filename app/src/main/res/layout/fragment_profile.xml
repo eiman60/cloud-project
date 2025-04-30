@@ -7,7 +7,11 @@
     android:background="#F0F4FA"
     tools:context=".profileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="2dp"
+            android:padding="10dp"
             android:inputType="textEmailAddress"
             android:enabled="false"
             android:background="@drawable/baby_blue_boarder"
@@ -55,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="2dp"
+            android:padding="10dp"
             android:background="@drawable/baby_blue_boarder"/>
         <TextView
             android:layout_width="match_parent"
@@ -67,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="2dp"
+            android:padding="10dp"
             android:background="@drawable/baby_blue_boarder"/>
 
         <!-- Phone -->
@@ -81,6 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="2dp"
+            android:padding="10dp"
             android:inputType="phone"
             android:background="@drawable/baby_blue_boarder"/>
         <TextView
@@ -94,6 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="2dp"
+            android:padding="10dp"
             android:inputType="phone"
             android:background="@drawable/baby_blue_boarder"/>
 
@@ -107,15 +116,29 @@
             android:textSize="22dp"
             android:layout_marginTop="30dp"/>
         <Button
+            android:id="@+id/signout_account_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="تسجيل الخروج"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FFC107"
+            android:fontFamily="@font/almara_regular"
+            android:textSize="22dp"
+            app:cornerRadius="20dp"/>
+        <Button
             android:id="@+id/delete_account_btn"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:text="حذف الحساب"
             android:textColor="@android:color/white"
-            android:backgroundTint="#FFC107"
-        android:fontFamily="@font/almara_regular"
-        android:textSize="22dp"
-        app:cornerRadius="20dp"/>
+            android:backgroundTint="#FB5C61"
+            android:fontFamily="@font/almara_regular"
+            android:textSize="22dp"
+            app:cornerRadius="20dp"/>
+
     </LinearLayout>
+    </ScrollView>
+
 </FrameLayout>

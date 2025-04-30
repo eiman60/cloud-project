@@ -217,6 +217,13 @@ public class ShowBabyFragment extends Fragment {
 
         // Add delete button
         Button deleteButton = new Button(requireContext());
+        // Add margin to delete button
+        LinearLayout.LayoutParams buttonLayoutParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+        );
+        buttonLayoutParams.setMargins(0, 20, 0, 20); // top margin = 32px (you can adjust it)
+        deleteButton.setLayoutParams(buttonLayoutParams);
         deleteButton.setText("حذف الطفل");
         deleteButton.setBackgroundResource(R.drawable.baby_blue_boarder);
         deleteButton.setTextColor(ContextCompat.getColor(requireContext(), R.color.baby_blue));

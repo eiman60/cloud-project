@@ -29,32 +29,23 @@ import java.util.Map;
  */
 public class profileFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     private EditText nameEditText, fnameEditText, phoneEditText, phone2EditText, emailEditText;
     private FirebaseAuth fAuth;
     private Button deleteAccountBtn;
+    private Button signoutAccountBtn;
 
     public profileFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment profileFragment.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static profileFragment newInstance(String param1, String param2) {
         profileFragment fragment = new profileFragment();
         Bundle args = new Bundle();
@@ -90,7 +81,9 @@ public class profileFragment extends Fragment {
         loadUserData();
 
         deleteAccountBtn = view.findViewById(R.id.delete_account_btn);
+        signoutAccountBtn = view.findViewById(R.id.signout_account_btn);
         deleteAccountBtn.setOnClickListener(v -> showDeleteConfirmationDialog());
+        signoutAccountBtn.setOnClickListener(v ->navigateToLogin());
 
         return view;
         //return inflater.inflate(R.layout.fragment_profile, container, false);

@@ -28,7 +28,6 @@ public class SignupActivity extends AppCompatActivity {
     Button mSignupBtn;
     TextView mLoginRedirect;
     FirebaseAuth fAuth;
-    Toast Progress;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,10 +45,10 @@ public class SignupActivity extends AppCompatActivity {
         mEmail.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
-       /*if (fAuth.getCurrentUser() != null) {
+       if (fAuth.getCurrentUser() != null) {
             startActivity(new Intent(SignupActivity.this, MainActivity.class));
             finish();
-        }*/
+        }
         mSignupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
