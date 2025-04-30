@@ -29,9 +29,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Sign Up"
+                android:text="إنشاء حساب"
                 android:textSize="36dp"
                 android:textAlignment="center"
+                android:fontFamily="@font/almara_regular"
                 android:textStyle="bold"
                 android:textColor="@color/yellow"
                 />
@@ -94,7 +95,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Sign Up"
+                android:text="إنشاء حساب"
+                android:fontFamily="@font/almara_regular"
                 android:id="@+id/signup_btn"
                 android:textSize="22dp"
                 android:layout_marginTop="30dp"
@@ -110,7 +112,8 @@
                 android:layout_marginTop="10dp"
                 android:onClick="setLoginRedirect"
                 android:padding="8dp"
-                android:text="Already an user? Login"
+                android:text="تمتلك حساب؟ سجل دخول"
+                android:fontFamily="@font/almara_regular"
                 android:textColor="@color/yellow"
                 android:textSize="18sp"
                 android:textStyle="bold" />
