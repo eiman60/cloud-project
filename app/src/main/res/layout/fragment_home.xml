@@ -17,6 +17,8 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/untitled_design__5_" />
 
+
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
@@ -90,5 +92,16 @@
         android:layout_marginLeft="65dp"
         android:clickable="true"
         android:src="@drawable/ww" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="@font/almara_regular"
+        android:textColor="#02B1C7"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="130dp"
+        android:text="مرحباً بك في حكاياتي" />
 
 </FrameLayout>
