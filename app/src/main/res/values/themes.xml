@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Project" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/baby_blue</item>
+        <item name="colorPrimaryVariant" tools:ignore="DuplicateDefinition">@color/baby_blue</item>
     </style>
-
     <style name="Theme.Project" parent="Base.Theme.Project" />
 </resources>

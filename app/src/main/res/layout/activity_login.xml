@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/reg_background"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/baby_blue_boarder">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="تسجيل الدخول"
+                android:fontFamily="@font/almara_regular"
+                android:textAlignment="center"
+                android:textColor="@color/yellow"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/login_email"
+                android:background="@drawable/baby_blue_boarder"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/login_password"
+                android:background="@drawable/baby_blue_boarder"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="تسجيل"
+                android:fontFamily="@font/almara_regular"
+                android:id="@+id/login_btn"
+                android:textSize="22dp"
+                android:layout_marginTop="30dp"
+                app:cornerRadius="20dp"/>
+
+            <TextView
+                android:id="@+id/signupRedirect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:onClick="setSignupRedirect"
+                android:padding="8dp"
+                android:text="ليس لديك حساب؟ سجل الآن"
+                android:fontFamily="@font/almara_regular"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
